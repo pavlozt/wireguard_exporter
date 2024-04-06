@@ -9,4 +9,4 @@ services:
       - /etc/wireguard/peers.toml:/etc/wireguard/peers.toml:ro
     cap_add:
       - NET_ADMIN
-    command: wireguard_exporter -wireguard.peer-file /etc/wireguard/peers.toml
+    command: /wireguard_exporter -wireguard.peer-file /etc/wireguard/peers.toml
